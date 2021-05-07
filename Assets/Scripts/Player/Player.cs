@@ -72,13 +72,13 @@ public class Player : MonoBehaviour
 
     private void TryPickUp()
     {
-        if (Physics.Raycast(_camera.position, _camera.forward, out var hitInfo, _takeDistance) && hitInfo.collider.gameObject.isStatic == false)
+        if (Physics.Raycast(_camera.position, _camera.forward, out var hitInfo, _takeDistance))
         {
             if (hitInfo.collider.gameObject.GetComponent<EndBlock>())
             {
                 EndBlockPicked?.Invoke();
             }
-            else
+            else if (hitInfo.collider.gameObject.GetComponent<PurpleCube>())
             {
                 _currentObject = hitInfo.collider.gameObject;
 

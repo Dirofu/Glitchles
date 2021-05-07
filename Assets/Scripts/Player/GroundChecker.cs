@@ -6,6 +6,11 @@ public class GroundChecker : MonoBehaviour
 
     public bool IsGrounded { get; private set; }
 
+    private void Start()
+    {
+        IsGrounded = true;
+    }
+
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.layer == _whatIsGround.layer)

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Scene\General.cs" />
     <Compile Include="Assets\Scripts\Scene\LevelButton.cs" />
     <Compile Include="Assets\Scripts\Scene\Menu.cs" />
+    <Compile Include="Assets\Scripts\Scene\PurpleCube.cs" />
     <Compile Include="Assets\Scripts\Scene\Record.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
